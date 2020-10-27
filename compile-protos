@@ -1,0 +1,5 @@
+#!/bin/bash
+
+set -e
+
+protoc -I protobuf/ --elixir_out=plugins=grpc:./lib/protobuf_test protobuf/**.proto

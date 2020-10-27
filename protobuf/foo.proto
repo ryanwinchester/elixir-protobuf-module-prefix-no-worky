@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package your.pkg;
+
+import "elixirpb.proto";
+
+option (elixirpb.file).module_prefix = "Foo.Bar";
+
+message Baz {
+  required string buzz = 1;
+}
